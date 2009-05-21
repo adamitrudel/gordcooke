@@ -9,6 +9,6 @@ development:
 production:
   adapter: mysql
   database: gordcook_cms
-  username: gordcook
+  username: gordcook_cms
   password: gordadmin01
   
