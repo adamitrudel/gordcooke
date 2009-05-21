@@ -12,11 +12,11 @@ module ApplicationHelper
   end
   
   def title
-    config['admin.title'] || 'Gord Cooke'
+    'Gord Cooke'
   end
   
   def subtitle
-    config['admin.subtitle'] || 'Building Knowledge'
+    'Building Knowledge'
   end
   
   def logged_in?
