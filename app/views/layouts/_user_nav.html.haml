@@ -6,8 +6,6 @@
   
   - if admin?
     = nav_link_to 'Users', admin_users_path
-    %span.separator=" | "
-    = nav_link_to 'Extensions', admin_extensions_path
 
   - else
     = nav_link_to 'Preferences', admin_preferences_url
