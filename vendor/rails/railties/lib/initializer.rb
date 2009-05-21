@@ -140,7 +140,7 @@ module Rails
       initialize_encoding
       initialize_database
 
-      initialize_cache
+      # initialize_cache
       initialize_framework_caches
 
       initialize_logger
