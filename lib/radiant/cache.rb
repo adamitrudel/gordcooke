@@ -1,8 +1,9 @@
-require 'rack/cache'
+require "#{Rails.root}/vendor/rack-cache/lib/rack/cache"
+
 # So we can subclass the storage types
-require 'rack/cache/storage'
-require 'rack/cache/metastore'
-require 'rack/cache/entitystore'
+require "#{Rails.root}/vendor/rack-cache/lib/rack/cache/storage"
+require "#{Rails.root}/vendor/rack-cache/lib/rack/cache/metastore"
+require "#{Rails.root}/vendor/rack-cache/lib/rack/cache/entitystore"
 
 module Radiant
   module Cache
