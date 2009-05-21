@@ -65,3 +65,15 @@
   background-color: white;
   color: #373F2F;
 }
+
+#content .form-area {
+  background-color: #E4F1C0;
+}
+
+#content table.fieldset td.help {
+  background-color: #E4F1C0;
+}
+
+#content #tabs .tab {
+  background-color: #A6D22E;
+}
