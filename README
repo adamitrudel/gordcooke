@@ -26,3 +26,12 @@ In the contact page, http://dev.gordcooke.com/contact-us.php when people fill up
 | PassWord: gordadmin01
 
 optim.emsolutions.ca/cpanel
+
+require "#{Rails.root}/vendor/rack-cache/lib/rack/cache"
+./script/server -e production -p 4444 -d
+nohup ./script/server -e production -p 4444 &
+optim.emsolutions.ca:4444
+gordcooke.com:4444
+74.63.3.143:4444/admin
+
+cat ~/.ssh/id_rsa.pub | ssh gordcook@74.63.3.143 'cat - >> ~/.ssh/authorized_keys'
