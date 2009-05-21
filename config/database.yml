@@ -1,0 +1,14 @@
+development:
+  adapter: mysql
+  database: gordcook_cms_development
+  username: root
+  password:
+  host: localhost
+
+
+production:
+  adapter: mysql
+  database: gordcook_cms
+  username: gordcook
+  password: gordadmin01
+  
