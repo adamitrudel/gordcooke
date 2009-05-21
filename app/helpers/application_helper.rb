@@ -12,11 +12,11 @@ module ApplicationHelper
   end
   
   def title
-    config['admin.title'] || 'Radiant CMS'
+    config['admin.title'] || 'Gord Cooke'
   end
   
   def subtitle
-    config['admin.subtitle'] || 'Publishing for Small Teams'
+    config['admin.subtitle'] || 'Building Knowledge'
   end
   
   def logged_in?
