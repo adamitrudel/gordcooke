@@ -1,0 +1,19 @@
+- if logged_in?
+
+  Welcome
+  = current_user
+  %span.separator=" | "
+  
+  - if admin?
+    = nav_link_to 'Users', admin_users_path
+    %span.separator=" | "
+    = nav_link_to 'Extensions', admin_extensions_path
+
+  - else
+    = nav_link_to 'Preferences', admin_preferences_url
+
+  %span.separator=" | "
+  = nav_link_to 'Log Out', logout_url
+
+  %span.separator=" | "
+  %span#view_site= link_to 'View Site', root_url

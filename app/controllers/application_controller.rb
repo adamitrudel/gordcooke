@@ -46,8 +46,8 @@ class ApplicationController < ActionController::Base
   
     def set_javascripts_and_stylesheets
       @stylesheets ||= []
-      @stylesheets.concat %w(admin/main)
+      @stylesheets.concat %w(admin/main admin/custom)
       @javascripts ||= []
-      @javascripts.concat %w(prototype string effects admin/tabcontrol admin/ruledtable admin/admin)
+      @javascripts.concat %w(jquery-1.3.2.min jquery.corner prototype string effects admin/tabcontrol admin/ruledtable admin/admin admin/custom)
     end
 end

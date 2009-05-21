@@ -1,0 +1,67 @@
+#page {
+	width: 980px;
+	margin: auto;
+	background-color: #0544AB;
+}
+
+#content {
+  color: #0544AB;
+}
+
+#header {
+  width: 980px;
+  background-color: #444;
+}
+
+#view_site {
+  padding: 0 0.5em;
+  background-color: #0544AB;
+}
+
+#logo {
+  float: left;
+  width: 171px;
+  height: 100px;
+}
+
+#menu_container {
+	float: left;
+	width: 809px;
+	height: 100px;
+	background-image: url(/images/small_photo_header.jpg);
+	background-position: top left;
+}
+
+#user_nav {
+  padding-top:7px;
+  padding-right: 10px;
+  text-align: right;
+  color: #CCC;
+  font-size: 80%;
+}
+
+#user_nav a {
+  font-weight: bold;
+}
+
+#navigation {
+  padding-top: 110px;
+  
+  margin-bottom: -10px;
+  border-bottom: 0px;
+
+  background-image: url(/images/bluesky.png);
+	background-position: bottom left;
+/*  height: 110px;*/
+}
+
+#navigation a, #navigation a:visited {
+  background-color: #A6D22E;
+  padding: .4em .9em;
+  color: #373F2F;
+}
+
+#navigation strong a, #navigation strong a:visited {
+  background-color: white;
+  color: #373F2F;
+}

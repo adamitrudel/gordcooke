@@ -28,6 +28,10 @@ class User < ActiveRecord::Base
     
   attr_writer :confirm_password
   
+  def to_s
+    name || login || email
+  end
+  
   def sha1(phrase)
     Digest::SHA1.hexdigest("--#{salt}--#{phrase}--")
   end
