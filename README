@@ -4,8 +4,10 @@ TODO
   * Implement dynamic sub-navigation
   * Implement dynamic main-navigation
   * Link first level blank page to it's first child
+  * Place holders & content for all pages
   >> CURRENTLY HERE <<
-  * Place holders & content for ...
+  * Place holders & content for footer & quick nav
+  * Link pages to footer and quick navigation
   * Link upcoming events to homepage
   * Link in-the-media to homepage
   * Submit newsletter function
