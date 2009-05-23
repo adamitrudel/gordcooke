@@ -1,11 +1,19 @@
 TODO
 ----
 
+  * Implement dynamic sub-navigation
+  * Implement dynamic main-navigation
+  * Link first level blank page to it's first child
+  >> CURRENTLY HERE <<
+  * Place holders & content for ...
+  * Link upcoming events to homepage
+  * Link in-the-media to homepage
+  * Submit newsletter function
+  * Test on IE
+  
+---------------------------------------------------------------------
+
 1- Change the Back-Office look (Login window) and internal section to 
-have it look like the top menu of the site.
-  * Change admin layout
-  * Change admin tabs
-  * Change admin colors
 
 2- Create the pages "layouts" and others in the CMS
 

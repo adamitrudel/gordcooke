@@ -1,0 +1,33 @@
+<div id="menu_container">
+  <div id="mainmenu">
+    <r:find url="/">
+      <r:children:each offset="1">
+        <div class="button" style="width: 140px; text-align: center;">
+      		<a href="<r:url />"><r:title /></a>
+      		<div class="submenu">
+    		  <r:children:each offset="1">
+         	    <div class="sm"><a href="<r:url />"><r:title /></a></div>
+          </r:children:each>
+      		</div>
+        </div>
+      </r:children:each>
+    </r:find>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+<div style="clear:both;"></div>
+
+<script type="text/javascript">
+<!--
+jQuery(function ($) {
+  var subMenus = $("#mainmenu .submenu").hide();
+  var mainButtons = $("#mainmenu > .button > a");
+  
+  mainButtons.mouseover( function () {
+    subMenus.hide();
+    $('.submenu', this).show();
+  });  
+});
+//-->
+</script>
+

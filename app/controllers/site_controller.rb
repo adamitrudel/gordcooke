@@ -17,6 +17,17 @@ class SiteController < ApplicationController
     end
 
     if @page = find_page(url)
+
+      # If content is blank
+      if @page.part('body').content.strip.blank?
+        first_child = @page.children.first
+        if first_child
+          # Redirect to the first child
+          redirect_to first_child.url
+          return
+        end
+      end
+      
       process_page(@page)
       set_cache_control
       @performed_render ||= true

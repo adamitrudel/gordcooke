@@ -50,9 +50,9 @@ FCKConfig.PluginsPath = FCKConfig.BasePath + 'plugins/' ;
 
 FCKConfig.Plugins.Add( 'autogrow' ) ;
 FCKConfig.Plugins.Add( 'dragresizetable' );
-FCKConfig.AutoGrowMax = 500 ;
+FCKConfig.AutoGrowMax = 600 ;
 
-FCKConfig.height = 500 ;
+FCKConfig.height = 600 ;
 
 // FCKConfig.ProtectedSource.Add( /<%[\s\S]*?%>/g ) ;	// ASP style server side code <%...%>
 // FCKConfig.ProtectedSource.Add( /<\?[\s\S]*?\?>/g ) ;	// PHP style server side code
@@ -98,11 +98,11 @@ FCKConfig.TemplateReplaceCheckbox = true ;
 FCKConfig.ToolbarLocation = 'In' ;
 
 FCKConfig.ToolbarSets["Default"] = [
+  ['Source','Save','Preview','FitWindow','ShowBlocks'],
 	['Bold','Italic','Underline','StrikeThrough'],
 	['OrderedList','UnorderedList','Outdent','Indent','Blockquote'],
 	['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
 	['Link','Unlink','Anchor'],
-	['Source','Save','Preview','FitWindow','ShowBlocks'],
 	'/',
 	['Style','FontFormat','FontName','FontSize'],
 	['TextColor','BGColor'],
