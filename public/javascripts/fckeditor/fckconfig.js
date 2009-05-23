@@ -48,9 +48,11 @@ FCKConfig.PreloadImages = [ FCKConfig.SkinPath + 'images/toolbar.start.gif', FCK
 
 FCKConfig.PluginsPath = FCKConfig.BasePath + 'plugins/' ;
 
-// FCKConfig.Plugins.Add( 'autogrow' ) ;
-// FCKConfig.Plugins.Add( 'dragresizetable' );
-FCKConfig.AutoGrowMax = 400 ;
+FCKConfig.Plugins.Add( 'autogrow' ) ;
+FCKConfig.Plugins.Add( 'dragresizetable' );
+FCKConfig.AutoGrowMax = 500 ;
+
+FCKConfig.height = 500 ;
 
 // FCKConfig.ProtectedSource.Add( /<%[\s\S]*?%>/g ) ;	// ASP style server side code <%...%>
 // FCKConfig.ProtectedSource.Add( /<\?[\s\S]*?\?>/g ) ;	// PHP style server side code
@@ -96,15 +98,15 @@ FCKConfig.TemplateReplaceCheckbox = true ;
 FCKConfig.ToolbarLocation = 'In' ;
 
 FCKConfig.ToolbarSets["Default"] = [
-	['Source','Save','Preview','FitWindow','ShowBlocks'],
 	['Bold','Italic','Underline','StrikeThrough'],
-	['OrderedList','UnorderedList','-','Outdent','Indent','Blockquote'],
+	['OrderedList','UnorderedList','Outdent','Indent','Blockquote'],
 	['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
 	['Link','Unlink','Anchor'],
-	['Image','Flash','Table','Rule','SpecialChar','PageBreak'],
+	['Source','Save','Preview','FitWindow','ShowBlocks'],
 	'/',
 	['Style','FontFormat','FontName','FontSize'],
-	['TextColor','BGColor']
+	['TextColor','BGColor'],
+	['Image','Flash','Table','Rule','SpecialChar','PageBreak']
 ] ;
 
 FCKConfig.ToolbarSets["Basic"] = [
