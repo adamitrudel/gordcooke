@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<Title>Gord Cooke | Testimonials</Title>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="">
+<META HTTP-equiv="Pragma" CONTENT="no-cache">
+<META NAME="Distribution" CONTENT="global">
+<META NAME="Rating" CONTENT="general">
+<META HTTP-EQUIV="Content-Language" CONTENT="FR-CA">
+<META NAME="revisit-after" CONTENT="5 days">
+<META NAME="robots" CONTENT="ALL">
+<META NAME="author" CONTENT="Emsolutions - http://www.emsolutions.ca">
+<META NAME="copyright" CONTENT="Emsolutions - Copyright © 2008">
+<META NAME="Publisher" CONTENT="Emsolutions">
+<link href="/styles/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_changeProp(objId,x,theProp,theValue) { //v9.0
+  var obj = null; with (document){ if (getElementById)
+  obj = getElementById(objId); }
+  if (obj){
+    if (theValue == true || theValue == false)
+      eval("obj.style."+theProp+"="+theValue);
+    else eval("obj.style."+theProp+"='"+theValue+"'");
+  }
+}
+//-->
+</script>
+</head>
+
+<body>
+
+<div id="header">
+<div id="logo"><a href="/index.php" title="Gord Cooke - Building Knowledge"><img src="/images/logo.gif" alt="Gord Cooke - Building Knowledge" width="171" height="130" /></a></div>
+	<div id="menu_container">
+		<div id="mainmenu">
+		  <div class="button" style="padding:0px;padding-left:40px;width:120px;text-align:center;">
+			<a href="#" onmouseover="
+			MM_changeProp('sub_profile','','display','block','DIV');
+			MM_changeProp('sub_profile','','visibility','visible','DIV')
+			MM_changeProp('sub_services','','display','none','DIV');
+			MM_changeProp('sub_services','','visibility','hidden','DIV')
+			MM_changeProp('sub_cooke','','display','none','DIV');
+			MM_changeProp('sub_cooke','','visibility','hidden','DIV')
+			MM_changeProp('sub_events','','display','none','DIV');
+			MM_changeProp('sub_events','','visibility','hidden','DIV')
+			MM_changeProp('sub_media','','display','none','DIV');
+			MM_changeProp('sub_media','','visibility','hidden','DIV')
+			">profile</a>
+			<div id="sub_profile">
+       	  <div class="sm"><a href="/profile_biography.php">Biography</a></div>
+                <div class="sm"><a href="/profile_mission.php">Mission &amp; values</a></div>
+                <div class="sm"><a href="/profile_expertise.php">Expertise &amp; experience</a></div>
+                <div class="sm"><a href="/profile_memberships.php">Membership &amp; awards</a></div>
+			</div>
+	      </div>
+		  <div class="button" style="padding:0px;width:130px;text-align:center;">
+			<a href="#" onmouseover="
+			MM_changeProp('sub_profile','','display','none','DIV');
+			MM_changeProp('sub_profile','','visibility','hidden','DIV')
+			MM_changeProp('sub_services','','display','block','DIV');
+			MM_changeProp('sub_services','','visibility','visible','DIV')
+			MM_changeProp('sub_cooke','','display','none','DIV');
+			MM_changeProp('sub_cooke','','visibility','hidden','DIV')
+			MM_changeProp('sub_events','','display','none','DIV');
+			MM_changeProp('sub_events','','visibility','hidden','DIV')
+			MM_changeProp('sub_media','','display','none','DIV');
+			MM_changeProp('sub_media','','visibility','hidden','DIV')
+			">services</a>
+				<div id="sub_services" style="display:block;visibility:visible;">
+					<div class="sm"><a href="/services_offered_siteassessments.php">Services offered</a></div>
+					<div class="sm"><a href="/services_industry_associations.php">Industry-specific benefits</a></div>
+					<div class="sm"><a href="/services_team.php">Team</a></div>
+					<div class="sm"><a href="/services_associates.php">Associates</a></div>
+					<div class="sm"><a href="/services_success-stories.php">Success Stories</a></div>
+					<div class="sm" style="background-image:url(images/bg_sm-over.png);"><a href="/services_testimonials.php">Testimonials</a></div>
+				</div>
+            </div>
+			<div class="button" style="padding:0px;width:150px;text-align:center;">
+      <a href="#" onmouseover="
+			MM_changeProp('sub_profile','','display','none','DIV');
+			MM_changeProp('sub_profile','','visibility','hidden','DIV')
+			MM_changeProp('sub_services','','display','none','DIV');
+			MM_changeProp('sub_services','','visibility','hidden','DIV')
+			MM_changeProp('sub_cooke','','display','block','DIV');
+			MM_changeProp('sub_cooke','','visibility','visible','DIV')
+			MM_changeProp('sub_events','','display','none','DIV');
+			MM_changeProp('sub_events','','visibility','hidden','DIV')
+			MM_changeProp('sub_media','','display','none','DIV');
+			MM_changeProp('sub_media','','visibility','hidden','DIV')
+			">cooke report</a>
+				<div id="sub_cooke">
+					<div class="sm"><a href="/cooke-report_training.php">Training workshops</a></div>
+					<div class="sm"><a href="/cooke-report_sponsors.php">Sponcors</a></div>
+				</div>
+			</div>
+            <div class="button" style="padding:0px;width:110px;text-align:center;">
+      <a href="#" onmouseover="
+			MM_changeProp('sub_profile','','display','none','DIV');
+			MM_changeProp('sub_profile','','visibility','hidden','DIV')
+			MM_changeProp('sub_services','','display','none','DIV');
+			MM_changeProp('sub_services','','visibility','hidden','DIV')
+			MM_changeProp('sub_cooke','','display','none','DIV');
+			MM_changeProp('sub_cooke','','visibility','hidden','DIV')
+			MM_changeProp('sub_events','','display','block','DIV');
+			MM_changeProp('sub_events','','visibility','visible','DIV')
+			MM_changeProp('sub_media','','display','none','DIV');
+			MM_changeProp('sub_media','','visibility','hidden','DIV')
+			">events</a>
+				<div id="sub_events">
+					<div class="sm"><a href="/events_calendar.php">Events calendar</a></div>
+					<div class="sm"><a href="/events_signup.php">Sign-up for an event</a></div>
+				</div>
+			</div>
+            <div class="button" style="padding:0px;width:140px;text-align:center;">
+			<a href="#" onmouseover="
+			MM_changeProp('sub_profile','','display','none','DIV');
+			MM_changeProp('sub_profile','','visibility','hidden','DIV')
+			MM_changeProp('sub_services','','display','none','DIV');
+			MM_changeProp('sub_services','','visibility','hidden','DIV')
+			MM_changeProp('sub_cooke','','display','none','DIV');
+			MM_changeProp('sub_cooke','','visibility','hidden','DIV')
+			MM_changeProp('sub_events','','display','none','DIV');
+			MM_changeProp('sub_events','','visibility','hidden','DIV')
+			MM_changeProp('sub_media','','display','block','DIV');
+			MM_changeProp('sub_media','','visibility','visible','DIV')
+			">media room</a>
+			<div id="sub_media">
+              <div class="sm"><a href="/media-room_news.php">In the News</a></div>
+              <div class="sm"><a href="/media-room_articles.php">Articles &amp; Publications</a></div>
+              <div class="sm"><a href="/media-room_helpful-links.php">Helpful Links</a></div>
+			</div>
+          </div>
+            <div class="button" style="border-right:none;">
+			<a href="contact-us.php" onmouseover="
+			MM_changeProp('sub_profile','','display','none','DIV');
+			MM_changeProp('sub_profile','','visibility','hidden','DIV')
+			MM_changeProp('sub_services','','display','none','DIV');
+			MM_changeProp('sub_services','','visibility','hidden','DIV')
+			MM_changeProp('sub_cooke','','display','none','DIV');
+			MM_changeProp('sub_cooke','','visibility','hidden','DIV')
+			MM_changeProp('sub_events','','display','none','DIV');
+			MM_changeProp('sub_events','','visibility','hidden','DIV')
+			MM_changeProp('sub_media','','display','none','DIV');
+			MM_changeProp('sub_media','','visibility','hidden','DIV')
+			">contact</a>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+    <div style="clear:both;"></div>
+</div>
+
+<div id="container_inner">
+	<div id="header-inner"><img src="images/headers/testimonials.jpg" alt="Contact" width="980" height="96" /></div>
+	<div id="inner_col-left"> <a href="book-gord.php"><img src="images/left-col/icon_book-gord.gif" alt="Book Gord" width="156" height="83" style="margin-top:5px;" /></a> <a href="meet-gord.php"><img src="images/left-col/icon_meet-gord.gif" alt="Book Gord" width="156" height="83" style="margin-top:5px;" /></a> <a href="read-gord.php"><img src="images/left-col/icon_read-gord.gif" alt="Book Gord" width="156" height="83" style="margin-top:5px;" /></a> <a href="media-room_articles.php"><img src="images/left-col/icon_whatsup-gord.gif" alt="Book Gord" width="156" height="83" style="margin-top:5px;" /></a> </div>
+	<div id="inner_col-right">
+      <h1><img src="images/inner_photos/success-stories.jpg" width="169" height="312" align="right" />TESTIMONIALS</h1>
+      <p><em>“Gord is an excellent communicator. The use of various materials to encourage participant involvement assisted in [our] learning experience.”
+        </em><br />
+      <strong>Don Johnston, Senior Director, Canadian Home Builders Association </strong></p>
+      <p><em>“Gord is a people-friendly engineer that can provide a sales team both inspiration and knowledge, no matter how well-trained they are.”
+        </em><br />
+      <strong>Will Worth, President & CEO, Medallion Homes, Texas</strong></p>
+      <p> <em>“Gord was [a] very informative and dynamic speaker. I heard nothing but complements. I believe everyone in attendance gained a great deal [of] knowledge on how to build better, more efficient housing.” </em><br />
+        <strong>Jenefer Russum, Planner DNREC DE Energy Office</strong></p>
+      <p> <em>“The sales staff who attended Gord’s session responded very well to the information, role playing and ideas which he presented and they have worked to continuously improve their skills. Our expectations were definitely exceeded and we will continue to raise the bar for our people and our company with Gord’s training.”</em><br />
+      <strong>Rich Coyle, Purchasing Manager D R Horton, Sacramento, CA</strong></p>
+      <p> <em>“I’ve been to major seminars and conferences for 20 years, [Gord was the] best speaker I’ve ever heard. [We] must have him back.” </em><br />
+        <strong>Building Science session attendee from St. Louis, MO in June 2006 </strong></p>
+      <p><em>“We had almost 100 sales representatives, builders and developers from our network in attendance and their feedback on your presentation, both informal and through the conference evaluation forms, was universally positive. Your mastery of your material from both the technical and sales perspectives was clear, as always. Many asked that we bring you back again and, given that this is the third year in a row that you have presented to our group that is no small compliment. Thank you for helping us to stay on the leading edge.”</em><br />
+      <strong>David Poupore, President, Guildcrest Building Corporation, Ontario, Canada, March 2009</strong></p>
+      <p> <em>“On behalf of the entire Energy Design Conference Team and the over 1,000 registrants who attended the conference, I want to thank you for presenting at the 2009 Energy Design Conference & Expo. We received an abundance of positive comments regarding the scope, content, and quality of your sessions. It is your energy, knowledge, and passion for what you do that make this conference such an educational and exciting event for our attendees. The heart of this event is the content of the sessions—thank you for going above and beyond our expectations. Congratulations on a job well done!”</em><br />
+      <strong>Amanda Oja, Minnesota Power, Duluth, MN, March 2009 </strong></p>
+      <p><em>“I attend many seminars. I have never rated a seminar excellent all round before. Gord is interesting, right pace and polished. No long war stories or audience digressions.”</em><br />
+      <strong>Building Performance Contractors Association seminar attendee, NY State in April 2009 </strong></p>
+      <p>The following are comments from attendees of the 2009 Better Building : Better Business Conference in Wisconsin, where Gord’s seminar was ranked 4th out of 60 with 98% of respondents indicating that they would seek Gord out as a presenter :</p>
+      <p> <em>“Very informative, practical & humorous!”  
+        
+      <br />
+      “One of the best, most straightforward HVAC presentations I’ve ever attended!”
+        
+      <br />
+      “Very knowledgeable presenter, very enthusiastic presenter.”<br />
+“An instructor that geared his class for HVAC contractors.  Thank you.”  
+        
+      <br />
+      “Gord is a rock star!”<br />
+“Great speaker.”<br />
+“Great - bring him back next year!”<br />
+“Awesome!”<br />
+“Fabulous session!!!”<br />
+“The Canadian presenters are in the lead on many topics.”<br />
+“He’s very good at simplifying the economics.” </em></p>
+  </div>
+
+<div style="clear:both;"></div>
+
+</div>
+
+<div id="footer">
+	<div id="footermenu">
+		<div id="footertxt">
+			<a href="/index.php">Home</a> | <a href="/profile_biography.php">Profile</a> | <a href="/services_offered_siteassessments.php">Services</a> | <a href="cooke-report_training.php">Cooke Report</a> | <a href="events_calendar.php">Events</a> | <a href="media-room_news.php">Media Room</a> | <a href="contact-us.php">Contact Us</a> | <a href="sitemap.php">Site Map</a> | <a href="privacy-policy.php">Privacy Policy</a><br/><br/>
+        <span class="copyright">© 2009 All Rights Reserved. <a href="http://www.gordcooke.com" style="font-size:10px;">GordCooke.com </a></span></div>
+	</div>
+</div>
+
+</body>
+</html>

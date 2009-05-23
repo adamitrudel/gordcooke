@@ -18,12 +18,12 @@ img {border:0px;}
 	/* margin:auto; */ 	 
 }
 
-#logo {width:171px;float:left;height:130px;}
+#logo {width:171px;float:left;}
 
 #menu_container {
 	width:809px;
 	float:left;
-	height:130px;
+	height:100px;
 	background-image:url(../images/photo_header.jpg);
 	background-position:top left;
 }
@@ -40,7 +40,7 @@ img {border:0px;}
 	font-weight:bold;
 	font-size:14px; 
 	color:#fff;
-	height:123px;
+	height:91px;
 }
 
 .button a {
@@ -182,16 +182,11 @@ img {border:0px;}
 
 #gord-cooke-text {
 	position:absolute;
-	width:312px;
+	display:block;
+	width:525px;
 	left:275px;
-	top:130px;
-}
-
-#gord-cooke-img {
-	position:absolute;
-	width:201px;
-	left:575px;
-	top:99px;
+	/* top:88px; */
+	top:68px;
 }
 
 #gord-cooke-text h1 {
@@ -229,7 +224,7 @@ img {border:0px;}
 
 #inner_col-left {width:170px;float:left;} 
 
-#inner_col-right {width:772px;float:right;margin-top:10px;padding-bottom:20px;}    
+#inner_col-right {width:772px;float:right;margin-top:10px;padding-bottom:20px;}   
 
 #inner_col-right h1 {font-size:16px;font-weight:bold;margin:0px;padding:0px;color:#494f5d;margin-bottom:10px;margin-top:10px;} 
 
@@ -279,22 +274,3 @@ img {border:0px;}
 .tdTitle {color:#fff;font-weight:bold;font-size:16px;}
 
 .tdtxt {color:#494f5d;font-size:11px;}
-
-
-/* SUB MENU CONTAINER */
-
-#sub_profile {visibility:hidden;display:none;}
-#sub_services {visibility:hidden;display:none;}
-#sub_cooke {visibility:hidden;display:none;}
-#sub_events {visibility:hidden;display:none;}
-#sub_media {visibility:hidden;display:none;}
-
-/* SUB SUB MENU */
-
-#subsubmenu a {text-decoration:none;font-size:12px;}
-
-#subsubmenu a:hover {text-decoration:underline;}
-
-#subsubmenu ul {margin:0px;padding:0px;list-style:none;}
-
-#subsubmenu li {border-bottom-width:1px;border-bottom-color:#fff;border-bottom-style:solid;padding:5px;}
