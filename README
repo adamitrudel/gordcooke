@@ -7,14 +7,14 @@ TODO
   * Place holders & content for all pages
   * Footer & quick nav separate pages
   * Link pages to footer and quick navigation
+  * Link a Rails app to gordcooke.com
   >> CURRENTLY HERE <<
   * Add real site-map content
   * Event management module
   * Link upcoming events & in-the-media to homepage
   * Contact us form
   * Submit newsletter function
-  * Test on IE
-  
+  * Test on IE  
   * Deploy to gordcooke.com
   
 ---------------------------------------------------------------------
@@ -45,11 +45,6 @@ cm = CampaignMonitor.new
 
 optim.emsolutions.ca/cpanel
 
-require "#{Rails.root}/vendor/rack-cache/lib/rack/cache"
-./script/server -e production -p 4444 -d
-nohup ./script/server -e production -p 4444 &
-optim.emsolutions.ca:4444
-gordcooke.com:4444
-74.63.3.143:4444/admin
-
-cat ~/.ssh/id_rsa.pub | ssh gordcook@74.63.3.143 'cat - >> ~/.ssh/authorized_keys'
+nohup script/server -e production -p 12005 &
+gordcooke.com
+gordcooke.com/admin
