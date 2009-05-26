@@ -6,12 +6,16 @@ TODO
   * Link first level blank page to it's first child
   * Place holders & content for all pages
   * Footer & quick nav separate pages
-  >> CURRENTLY HERE <<
   * Link pages to footer and quick navigation
-  * Link upcoming events to homepage
-  * Link in-the-media to homepage
+  >> CURRENTLY HERE <<
+  * Add real site-map content
+  * Event management module
+  * Link upcoming events & in-the-media to homepage
+  * Contact us form
   * Submit newsletter function
   * Test on IE
+  
+  * Deploy to gordcooke.com
   
 ---------------------------------------------------------------------
 
@@ -23,6 +27,10 @@ TODO
 
 4- We would need to add the newsletter system: http://github.com/jordanbrock/campaign-monitor-ruby/tree/master  (Account API = 0173c3e3d39fcc527420284e4e8826e1) (More details on http://www.campaignmonitor.com/api/) to the system.
 In the contact page, http://dev.gordcooke.com/contact-us.php when people fill up the form and check the checkbox, they get into the Newsletter system.
+
+CampaignMonitor::CAMPAIGN_MONITOR_API_KEY = '0173c3e3d39fcc527420284e4e8826e1'
+cm = CampaignMonitor.new
+=> Wrong API key
 
 5- In this page : http://dev.gordcooke.com/events.php We need a "Custom module" for them to easily add events to this page.
 
