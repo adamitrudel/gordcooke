@@ -55,13 +55,6 @@ img {border:0px;}
 	color:#a6d22e; 
 }
 
-/* SUB MENU */
-
-.sm {background-image:url(../images/bg_sm.png);font-size:9px;padding-top:2px;padding-bottom:2px;margin-top:2px;margin-bottom:2px;font-weight:normal;z-index: 999;}
-.sm:hover {background-image:url(../images/bg_sm-over.png);}
-.sm a {font-size:9px;color:#fff;text-transform:none;z-index: 999;} 
-.sm a:hover {font-size:9px;color:#fff;text-transform:none;text-decoration:none;} 
-
 
 /* FOOTER */
 
@@ -281,16 +274,7 @@ img {border:0px;}
 .tdtxt {color:#494f5d;font-size:11px;}
 
 
-/* SUB MENU CONTAINER */
-
-#sub_profile {visibility:hidden;display:none;}
-#sub_services {visibility:hidden;display:none;}
-#sub_cooke {visibility:hidden;display:none;}
-#sub_events {visibility:hidden;display:none;}
-#sub_media {visibility:hidden;display:none;}
-
 /* SUB SUB MENU */
-
 #subsubmenu a {text-decoration:none;font-size:12px;}
 
 #subsubmenu a:hover {text-decoration:underline;}
