@@ -1,0 +1,36 @@
+<% if @page.class_name == 'NewsletterPage' -%>
+<div>
+  <p>This is a <strong>NewsletterPage</strong>. It means that each one of its children could be sent as email. Just add a new children, save it and send it.</p>
+  <p>
+    <%= link_to 'Manage subscribers', :controller => '/newsletter_subscribers', :newsletter_id => @page.id %> |
+    <%= link_to 'Logs', :controller => '/newsletter_logs' %>
+  </p>
+</div>
+<% elsif (@newsletter = @page.parent) && @newsletter.class_name == 'NewsletterPage' %>
+<div>
+  <p>This page is child of '<%= link_to @newsletter.title, page_edit_url(@newsletter.id) %>' that is a <strong>NewsletterPage</strong>. It means that it could be sent as email after saving.</p>
+  <% unless @page.new_record? %>    
+      <% form_tag({:controller => '/newsletters', :action => 'new', :page_id => @page.id}) do %>
+        <p>
+        <% if @page.sent_as_newsletter_email_at.nil? -%>
+          This email has not been sent yet.
+        <% else -%>
+            Sent at <%= @page.sent_as_newsletter_email_at.strftime("%I:%M <small>%p</small> on %B %d, %Y") %>.
+            Email queue: <strong><%= NewsletterEmail.count(:conditions => ["page_id = ?", @page.id]) %></strong> |
+            <%= link_to 'Logs', :controller => '/newsletter_logs' %>
+						<% if @page.is_a?(NewsletterEmailPage) %>
+							<br />
+							Subscribers that has read the newsletter: <%= @page.opened_count %> |
+							Subscribers that has clicked a link in the newsletter: <%= @page.clicked_count %>
+						<% end %>
+						
+        <% end -%>        
+        </p>
+        <p>
+          <%= submit_tag "Send as newsletter#{@page.sent_as_newsletter_email_at.nil? ? '' : ' again'}" %>
+          <%= submit_tag "Send test email", :name =>'test_email' %>
+        </p>
+      <% end %>    
+  <% end -%>
+</div>
+<% end -%>

@@ -1,0 +1,47 @@
+= Newsletter
+  
+  Created by: Andrea Franz - http://gravityblast.com
+  Version: 0.1.5
+  Contact: andrea AT gravityblast DOT com
+
+This extensions adds a newsletter system to RadiantCMS
+  
+More info can be found at the following url:
+
+  http://gravityblast.com/projects/radiant-newsletter-extension/
+  
+
+== Installation
+
+  Also you need to install the will_paginate rails plugin, you can find more info here:
+    
+    http://rock.errtheblog.com/will_paginate
+
+	Then you can proceed with installation:
+                                                           
+  	svn export http://dev.gravityblast.com/svn/projects/radiant/extensions/newsletter/ ./vendor/extensions/newsletter
+  
+  	rake RAILS_ENV="production" radiant:extensions:newsletter:install
+  
+Add ActionMailer configurations in your environment.rb and restart the server.
+
+	config.action_mailer.smtp_settings = {
+	  :address => "address_of_smtp_server",
+	  :port => 25,
+	  :domain => "domain_of_smtp_server"
+	}
+
+== Usage
+
+Create a Newsletter page using the following task:
+
+  rake RAILS_ENV="production" radiant:extensions:newsletter:page:new
+  
+This task will add a new page called Newsletter.Add a child to this page.
+This new page will be the email to send. After the first save, you will see
+the "Send as newsletter" button. Click and send your newsletter.
+
+== Contributors
+
+  Casper Fabricius (http://casperfabricius.com)
+  

@@ -1,11 +1,11 @@
 Homepage:
 
-There is a newsletter suscription form where we would need to keep that in a general list when they want to send mass e-mailing.
+There is a newsletter subscription form where we would need to keep that in a general list when they want to send mass e-mailing.
 I just saw this module we could probably use: http://github.com/pilu/radiant-newsletter/tree/master
 
 Event :
 The customer will need to add events easily on this page: http://www.gordcooke.com/events_calendar.php
-http://ext.radiantcms.org/extensions/13-page-event
+Write code for it!
 
 Contact US:
 We have a form on the http://www.gordcooke.com/contact-us.php page that needs to send the info to 
