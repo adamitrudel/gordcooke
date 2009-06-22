@@ -6,14 +6,19 @@ We have a form on the http://www.gordcooke.com/contact-us.php page that needs to
 lindac@gordcooke.com and keep this info in the DB if possible.  
 Note that there is an option (checkbox) to register to the newsletter.
 
-Event :
-The customer will need to add events easily on this page: http://www.gordcooke.com/events_calendar.php
-Write code for it!
-
+>> CURRENTLY HERE <<
 Newsletter:
 There is a newsletter subscription form where we would need to keep that in a general list when they want to send mass e-mailing.
 I just saw this module we could probably use: http://github.com/pilu/radiant-newsletter/tree/master
+# TODO: add params[:mailer][:email] to newsletters subscriber list
 
+Book Gord:
+
+Read Gord:
+
+Event:
+The customer will need to add events easily on this page: http://www.gordcooke.com/events_calendar.php
+Write code for it!
 
 
 TODO
@@ -28,7 +33,6 @@ TODO
   * Link a Rails app to gordcooke.com
   * Add real site-map content
   * Changes for Hompepage, Menu, & Layout adjustments
-  >> CURRENTLY HERE <<
   * Event management module
   * Link upcoming events & in-the-media to homepage
   * Contact us form

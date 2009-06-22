@@ -13,6 +13,11 @@ class MailController < ApplicationController
     @page.last_mail = part_page.last_mail = mail
     process_mail(mail, config)
 
+    if params[:subcriblesubmit_for_newsletters]
+      # TODO: add params[:mailer][:email] to newsletters subscriber list
+      
+    end
+    
     if mail.send
       redirect_to (config[:redirect_to] || "#{@page.url}#mail_sent")
     else
