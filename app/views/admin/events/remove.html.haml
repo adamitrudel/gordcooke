@@ -1,0 +1,13 @@
+%h1 Remove Event
+
+%p 
+  Are you sure you want to
+  %strong.warning permanently remove</strong>
+  = @event.description
+  Event?
+
+- form_for [:admin, @event], :html => {:method => :delete} do |f|
+  %p.buttons
+    = f.submit "Delete Event"
+    or
+    = link_to 'Cancel', admin_events_url

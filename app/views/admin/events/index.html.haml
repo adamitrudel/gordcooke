@@ -1,0 +1,27 @@
+%h1 Events
+
+%p 
+  Manage events that will show up at 
+  = link_to "Events Calendar", "/events/events-calendar"
+  page.
+
+  %p
+    = link_to 'New event', new_admin_event_url
+    
+%table#events.index{:cellspacing=>"0", :border=>"0", :cellpadding=>"0"}
+  %thead
+    %tr
+      %th Description
+      %th Location
+      %th Time
+      %th Date
+      %th.modify Modify
+  %tbody
+    - @events.each do |event|
+      %tr.node.level-1
+        %td= link_to event.description, edit_admin_event_url(event)
+        %td= event.location
+        %td= event.time
+        %td= event.date
+        %td.remove
+          = link_to image('remove', :alt => 'Remove Event'), remove_admin_event_url(event)

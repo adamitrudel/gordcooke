@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081203140407) do
+ActiveRecord::Schema.define(:version => 20090626085623) do
 
   create_table "config", :force => true do |t|
     t.string "key",   :limit => 40, :default => "", :null => false
@@ -17,6 +17,15 @@ ActiveRecord::Schema.define(:version => 20081203140407) do
   end
 
   add_index "config", ["key"], :name => "key", :unique => true
+
+  create_table "events", :force => true do |t|
+    t.string   "description"
+    t.string   "location"
+    t.string   "time"
+    t.string   "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "extension_meta", :force => true do |t|
     t.string  "name"
@@ -35,6 +44,41 @@ ActiveRecord::Schema.define(:version => 20081203140407) do
     t.integer  "lock_version",                 :default => 0
   end
 
+  create_table "newsletter_emails", :force => true do |t|
+    t.integer  "page_id"
+    t.string   "from"
+    t.string   "to"
+    t.integer  "last_send_attempt", :default => 0
+    t.text     "mail"
+    t.datetime "created_on"
+  end
+
+  create_table "newsletter_logs", :force => true do |t|
+    t.string   "message_type"
+    t.text     "message"
+    t.datetime "created_at"
+  end
+
+  create_table "newsletter_subscribers", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "newsletter_id"
+    t.string   "activation_code"
+    t.datetime "activated_at"
+    t.string   "unsubscription_code"
+    t.datetime "unsubscribed_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "newsletter_traces", :force => true do |t|
+    t.integer  "newsletter_email_page_id"
+    t.integer  "newsletter_subscriber_id"
+    t.string   "trace_type"
+    t.text     "trace_data"
+    t.datetime "created_on"
+  end
+
   create_table "page_parts", :force => true do |t|
     t.string  "name",      :limit => 100
     t.string  "filter_id", :limit => 25
@@ -46,10 +90,10 @@ ActiveRecord::Schema.define(:version => 20081203140407) do
 
   create_table "pages", :force => true do |t|
     t.string   "title"
-    t.string   "slug",          :limit => 100
-    t.string   "breadcrumb",    :limit => 160
-    t.string   "class_name",    :limit => 25
-    t.integer  "status_id",                    :default => 1,     :null => false
+    t.string   "slug",                        :limit => 100
+    t.string   "breadcrumb",                  :limit => 160
+    t.string   "class_name",                  :limit => 25
+    t.integer  "status_id",                                  :default => 1,     :null => false
     t.integer  "parent_id"
     t.integer  "layout_id"
     t.datetime "created_at"
@@ -57,10 +101,12 @@ ActiveRecord::Schema.define(:version => 20081203140407) do
     t.datetime "published_at"
     t.integer  "created_by_id"
     t.integer  "updated_by_id"
-    t.boolean  "virtual",                      :default => false, :null => false
-    t.integer  "lock_version",                 :default => 0
+    t.boolean  "virtual",                                    :default => false, :null => false
+    t.integer  "lock_version",                               :default => 0
     t.string   "description"
     t.string   "keywords"
+    t.integer  "position"
+    t.datetime "sent_as_newsletter_email_at"
   end
 
   add_index "pages", ["class_name"], :name => "pages_class_name"

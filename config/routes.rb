@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :layouts
     admin.resources :snippets
     admin.resources :users
+    admin.resources :events
   end
 
   map.namespace :admin do |admin|

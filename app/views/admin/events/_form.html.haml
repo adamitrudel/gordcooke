@@ -1,0 +1,23 @@
+- form_for [:admin, @event] do |f|
+  %p
+    = f.label :description
+    %br
+    = f.text_field :description
+  %p
+    = f.label :location
+    %br
+    = f.text_field :location
+  %p
+    = f.label :time
+    %br
+    = f.text_field :time
+  %p
+    = f.label :date
+    %br
+    = f.text_field :date
+    
+  %p.buttons
+    = save_model_button(@event)
+    = save_model_and_continue_editing_button(@event)
+    or 
+    = link_to "Cancel", {:action => :index}

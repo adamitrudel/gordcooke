@@ -137,6 +137,7 @@ module Radiant
       admin.tabs.add "Pages",    "/admin/pages"
       admin.tabs.add "Snippets", "/admin/snippets"
       admin.tabs.add "Layouts",  "/admin/layouts", :visibility => [:admin, :developer]
+      admin.tabs.add "Events",   "/admin/events"
     end
 
     def initialize_framework_views
