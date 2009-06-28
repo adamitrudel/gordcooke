@@ -15,7 +15,7 @@ class MailController < ApplicationController
     @page.last_mail = part_page.last_mail = mail
     process_mail(mail, config)
 
-    if params[:subcriblesubmit_for_newsletters]
+    if params[:submit_for_newsletters]
       # Add params[:mailer][:email] to newsletters subscriber list
       http = Net::HTTP.new('em-ailer.emsolutions.ca', 80)      
       resp, data = http.post('/t/r/s/jtuts/', "cm-jtuts-jtuts=#{params[:mailer][:email]}" , nil)
