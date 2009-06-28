@@ -1,3 +1,5 @@
+require 'net/http'
+
 class MailController < ApplicationController
 
   no_login_required
@@ -14,8 +16,9 @@ class MailController < ApplicationController
     process_mail(mail, config)
 
     if params[:subcriblesubmit_for_newsletters]
-      # TODO: add params[:mailer][:email] to newsletters subscriber list
-      
+      # Add params[:mailer][:email] to newsletters subscriber list
+      http = Net::HTTP.new('em-ailer.emsolutions.ca', 80)      
+      resp, data = http.post('/t/r/s/jtuts/', "cm-jtuts-jtuts=#{params[:mailer][:email]}" , nil)
     end
     
     if mail.send
