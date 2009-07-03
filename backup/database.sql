@@ -52,10 +52,13 @@ CREATE TABLE `events` (
   `id` int(11) NOT NULL auto_increment,
   `description` varchar(255) default NULL,
   `location` varchar(255) default NULL,
-  `time` varchar(255) default NULL,
-  `date` varchar(255) default NULL,
   `created_at` datetime default NULL,
   `updated_at` datetime default NULL,
+  `is_cooke_report` tinyint(1) default NULL,
+  `start_date` date default NULL,
+  `end_date` date default NULL,
+  `start_time` varchar(255) default NULL,
+  `end_time` varchar(255) default NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
@@ -66,7 +69,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `events` WRITE;
 /*!40000 ALTER TABLE `events` DISABLE KEYS */;
-INSERT INTO `events` VALUES (2,'Enbridge Condo Ventilation Seminar','St. Catherines, ON','7:00 am to 10:00 am',' May 1, 2009','2009-06-26 09:30:05','2009-06-26 09:30:05'),(3,'Enbridge Condo Ventilation Seminar','Richmond Hill, ON','7:00 am to 10:00 am',' May 8, 2009','2009-06-26 09:32:37','2009-06-26 09:32:37'),(4,'EnerQuality Sales & Marketing Workshop1 ','London, ON','8:30 am to 4:30 pm',' June 8, 2009','2009-06-26 09:33:27','2009-06-26 09:33:27'),(5,'EnerQuality Sales & Marketing Workshop1 ','Toronto, ON','8:30 am to 4:30 pm','June 9, 2009','2009-06-26 09:34:02','2009-06-26 09:34:02'),(6,'EEBA Board Meetings','Minneapolis, MN','','June 10-11, 2009','2009-06-26 09:38:10','2009-06-26 09:38:10'),(7,'Enbridge Condo Ventilation Seminar ','Ottawa, ON','7:00 am to 10:00 am ','June 16, 2009','2009-06-26 09:38:45','2009-06-26 09:38:45'),(8,'EnerQuality ENERGY STAR Evaluator Workshop ','Toronto, ON','8:00 am to 5:00 pm ','June 17-19, 2009','2009-06-26 09:42:20','2009-06-26 09:42:20'),(9,'AM 640 Toronto Phone in Radio Show','Toronto, ON','8:00 am to 10:00 am ','June 20, 2009','2009-06-26 09:42:48','2009-06-26 09:42:48'),(10,'EnerQuality Sales & Marketing Workshop1','Sudbury, ON','8:30 am to 4:30 pm','June 23, 2009','2009-06-26 09:43:17','2009-06-26 09:43:17'),(11,'EnerQuality Sales & Marketing Workshop1','Toronto, ON','8:30 am to 4:30 pm','July 24, 2009','2009-06-26 09:43:45','2009-06-26 09:43:45'),(12,'EEBA Houses That Work Workshop 1','Flagstaff, AZ','8:00 am to 4:00 pm','August 7, 2009','2009-06-26 09:44:12','2009-06-26 09:44:12'),(13,'Building Knowledge Condo Ventilation Seminar','Halifax, NS','TBD','August 26, 2009','2009-06-26 09:44:41','2009-06-26 09:44:41'),(14,'EEBA Houses That Work Workshop 1','Portland, OR','8:00 am to 4:00 pm','September 1, 2009','2009-06-26 09:45:25','2009-06-26 09:45:25'),(15,'EEBA Houses That Work Workshop 2 - IAQ & Ventilation','Portland, OR','8:00 am to 4:00 pm','September 2, 2009','2009-06-26 09:47:14','2009-06-26 09:47:14'),(16,'CMHC Build/Renovate to Avoid Mold BRAM','London, ON','8:00 am to 4:30 pm','September 11, 2009','2009-06-26 09:47:56','2009-06-26 09:47:56'),(17,'EEBA Houses That Work Workshop 1','Seattle, WA','8:00 am to 4:00 pm','September 14, 2009','2009-06-26 09:49:04','2009-06-26 09:49:04'),(18,'EEBA Houses That Work Workshop 2 - IAQ & Ventilation','Seattle, WA','8:00 am to 4:00 pm','September 15, 2009','2009-06-26 09:49:32','2009-06-26 09:49:32'),(19,'HRAI Annual Conference Speaker','St. John\'s, NF','9:15 am to 10:30 am','September 17-19, 2009','2009-06-26 09:50:03','2009-06-26 09:50:03'),(20,'EEBA Annual Conference Speaker ','Denver, CO','TBD','September 28-30, 2009','2009-06-26 09:50:35','2009-06-26 09:50:35'),(21,'EEBA Houses That Work','Chicago, IL','8:00 am to 4:00 pm','October 13, 2009','2009-06-27 02:33:24','2009-06-27 02:33:24'),(22,'EnerQuality Sales & Marketing Workshop 1','Ottawa, ON','8:30 am to 4:30 pm','October 27, 2009','2009-06-27 02:34:36','2009-06-27 02:34:36'),(23,'Canadian Retrofit Conference','Toronto, ON','','October 28-29, 2009','2009-06-27 02:35:00','2009-06-27 02:35:00'),(24,'EEBA GreenBuild Conference Speaker','Phoenix, AZ','TBD','November 13, 2009','2009-06-27 02:35:52','2009-06-27 02:35:52'),(25,'EnerQuality Evaluator Workshop','Toronto, ON','8:30 am to 4:30 pm','November 25-27, 2009','2009-06-27 02:36:54','2009-06-27 02:36:54'),(26,'EnerQuality Sales & Marketing Workshop 1','Toronto, ON','8:30 am to 4:30 pm','December 18, 2009','2009-06-27 02:37:25','2009-06-27 02:37:25');
+INSERT INTO `events` VALUES (2,'Enbridge Condo Ventilation Seminar','St. Catherines, ON','2009-06-26 09:30:05','2009-06-26 09:30:05',NULL,NULL,NULL,NULL,NULL),(3,'Enbridge Condo Ventilation Seminar','Richmond Hill, ON','2009-06-26 09:32:37','2009-07-03 02:16:14',1,NULL,NULL,NULL,NULL),(4,'EnerQuality Sales & Marketing Workshop1 ','London, ON','2009-06-26 09:33:27','2009-06-26 09:33:27',NULL,NULL,NULL,NULL,NULL),(5,'EnerQuality Sales & Marketing Workshop1 ','Toronto, ON','2009-06-26 09:34:02','2009-07-03 02:16:20',1,NULL,NULL,NULL,NULL),(6,'EEBA Board Meetings','Minneapolis, MN','2009-06-26 09:38:10','2009-06-26 09:38:10',NULL,NULL,NULL,NULL,NULL),(7,'Enbridge Condo Ventilation Seminar ','Ottawa, ON','2009-06-26 09:38:45','2009-06-26 09:38:45',NULL,NULL,NULL,NULL,NULL),(8,'EnerQuality ENERGY STAR Evaluator Workshop ','Toronto, ON','2009-06-26 09:42:20','2009-06-26 09:42:20',NULL,NULL,NULL,NULL,NULL),(9,'AM 640 Toronto Phone in Radio Show','Toronto, ON','2009-06-26 09:42:48','2009-06-26 09:42:48',NULL,NULL,NULL,NULL,NULL),(10,'EnerQuality Sales & Marketing Workshop1','Sudbury, ON','2009-06-26 09:43:17','2009-06-26 09:43:17',NULL,NULL,NULL,NULL,NULL),(11,'EnerQuality Sales & Marketing Workshop1','Toronto, ON','2009-06-26 09:43:45','2009-07-03 02:16:29',1,NULL,NULL,NULL,NULL),(12,'EEBA Houses That Work Workshop 1','Flagstaff, AZ','2009-06-26 09:44:12','2009-06-26 09:44:12',NULL,NULL,NULL,NULL,NULL),(13,'Building Knowledge Condo Ventilation Seminar','Halifax, NS','2009-06-26 09:44:41','2009-06-26 09:44:41',NULL,NULL,NULL,NULL,NULL),(14,'EEBA Houses That Work Workshop 1','Portland, OR','2009-06-26 09:45:25','2009-06-26 09:45:25',NULL,NULL,NULL,NULL,NULL),(15,'EEBA Houses That Work Workshop 2 - IAQ & Ventilation','Portland, OR','2009-06-26 09:47:14','2009-06-26 09:47:14',NULL,NULL,NULL,NULL,NULL),(16,'CMHC Build/Renovate to Avoid Mold BRAM','London, ON','2009-06-26 09:47:56','2009-06-26 09:47:56',NULL,NULL,NULL,NULL,NULL),(17,'EEBA Houses That Work Workshop 1','Seattle, WA','2009-06-26 09:49:04','2009-06-26 09:49:04',NULL,NULL,NULL,NULL,NULL),(18,'EEBA Houses That Work Workshop 2 - IAQ & Ventilation','Seattle, WA','2009-06-26 09:49:32','2009-06-26 09:49:32',NULL,NULL,NULL,NULL,NULL),(19,'HRAI Annual Conference Speaker','St. John\'s, NF','2009-06-26 09:50:03','2009-06-26 09:50:03',NULL,NULL,NULL,NULL,NULL),(20,'EEBA Annual Conference Speaker ','Denver, CO','2009-06-26 09:50:35','2009-06-26 09:50:35',NULL,NULL,NULL,NULL,NULL),(21,'EEBA Houses That Work','Chicago, IL','2009-06-27 02:33:24','2009-06-27 02:33:24',NULL,NULL,NULL,NULL,NULL),(22,'EnerQuality Sales & Marketing Workshop 1','Ottawa, ON','2009-06-27 02:34:36','2009-06-27 02:34:36',NULL,NULL,NULL,NULL,NULL),(23,'Canadian Retrofit Conference','Toronto, ON','2009-06-27 02:35:00','2009-06-27 02:35:00',NULL,NULL,NULL,NULL,NULL),(24,'EEBA GreenBuild Conference Speaker','Phoenix, AZ','2009-06-27 02:35:52','2009-06-27 02:35:52',NULL,NULL,NULL,NULL,NULL),(25,'EnerQuality Evaluator Workshop','Toronto, ON','2009-06-27 02:36:54','2009-06-27 02:36:54',NULL,NULL,NULL,NULL,NULL),(26,'EnerQuality Sales & Marketing Workshop 1','Toronto, ON','2009-06-27 02:37:25','2009-06-27 02:37:25',NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `events` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -198,7 +201,7 @@ CREATE TABLE `newsletter_subscribers` (
   `created_at` datetime default NULL,
   `updated_at` datetime default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 SET character_set_client = @saved_cs_client;
 
 --
@@ -329,7 +332,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `schema_migrations` WRITE;
 /*!40000 ALTER TABLE `schema_migrations` DISABLE KEYS */;
-INSERT INTO `schema_migrations` VALUES ('1'),('10'),('11'),('12'),('13'),('14'),('15'),('16'),('17'),('18'),('19'),('2'),('20'),('20081203140407'),('20090626085623'),('21'),('3'),('4'),('5'),('6'),('7'),('8'),('9'),('Newsletter-1'),('Newsletter-2'),('Newsletter-3'),('Newsletter-4'),('Newsletter-5'),('Reorder-1');
+INSERT INTO `schema_migrations` VALUES ('1'),('10'),('11'),('12'),('13'),('14'),('15'),('16'),('17'),('18'),('19'),('2'),('20'),('20081203140407'),('20090626085623'),('20090703020443'),('20090703024513'),('21'),('3'),('4'),('5'),('6'),('7'),('8'),('9'),('Newsletter-1'),('Newsletter-2'),('Newsletter-3'),('Newsletter-4'),('Newsletter-5'),('Reorder-1');
 /*!40000 ALTER TABLE `schema_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -439,4 +442,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2009-06-28  2:59:57
+-- Dump completed on 2009-07-03  6:04:24
