@@ -1,3 +1,5 @@
+= stylesheet_link_tag "timePicker.css"
+
 - form_for [:admin, @event] do |f|
   %p
     = f.label :description
@@ -7,17 +9,40 @@
     = f.label :location
     %br
     = f.text_field :location
-  %p
-    = f.label :time
+
+  %p{ :style => "padding-top: 15px" }
+    = f.label :start_time
     %br
-    = f.text_field :time
+    = f.text_field :start_time
   %p
-    = f.label :date
+    = f.label :end_time
     %br
-    = f.text_field :date
-    
+    = f.text_field :end_time
+
+  %p{ :style => "padding-top: 15px" }
+    = f.label :start_date
+    %br
+    = f.text_field :start_date
+  %p
+    = f.label :end_date
+    %br
+    = f.text_field :end_date
+
+  %p{ :style => "padding-top: 15px" }
+    = f.check_box :is_cooke_report
+    = f.label :is_cooke_report, 'Cooke Report?'
+  
   %p.buttons
     = save_model_button(@event)
     = save_model_and_continue_editing_button(@event)
     or 
-    = link_to "Cancel", {:action => :index}
+    = link_to "Cancel", { :action => :index }
+
+:javascript
+  jQuery('#event_start_time, #event_end_time').timePicker({
+    startTime: "06:00", // Using string. Can take string or Date object.
+    endTime: new Date(0, 0, 0, 22, 0, 0), // Using Date object here.
+    show24Hours: false,
+    separator: ':',
+    step: 15
+  });

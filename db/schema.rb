@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090626085623) do
+ActiveRecord::Schema.define(:version => 20090703024513) do
 
   create_table "config", :force => true do |t|
     t.string "key",   :limit => 40, :default => "", :null => false
@@ -21,10 +21,13 @@ ActiveRecord::Schema.define(:version => 20090626085623) do
   create_table "events", :force => true do |t|
     t.string   "description"
     t.string   "location"
-    t.string   "time"
-    t.string   "date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_cooke_report"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.string   "start_time"
+    t.string   "end_time"
   end
 
   create_table "extension_meta", :force => true do |t|

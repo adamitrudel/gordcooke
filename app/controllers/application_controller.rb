@@ -48,6 +48,6 @@ class ApplicationController < ActionController::Base
       @stylesheets ||= []
       @stylesheets.concat %w(admin/main admin/custom)
       @javascripts ||= []
-      @javascripts.concat %w(jquery-1.3.2.min jquery.corner prototype string effects admin/tabcontrol admin/ruledtable admin/admin admin/custom)
+      @javascripts.concat %w(jquery-1.3.2.min jquery.timePicker prototype string effects admin/tabcontrol admin/ruledtable admin/admin admin/custom)
     end
 end

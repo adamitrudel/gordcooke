@@ -12,6 +12,7 @@
   %thead
     %tr
       %th Description
+      %th Cooke Report?
       %th Location
       %th Time
       %th Date
@@ -20,6 +21,7 @@
     - @events.each do |event|
       %tr.node.level-1
         %td= link_to event.description, edit_admin_event_url(event)
+        %td= image_tag('cooke-report.png') if event.is_cooke_report
         %td= event.location
         %td= event.time
         %td= event.date

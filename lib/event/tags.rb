@@ -8,7 +8,8 @@ module Event::Tags
   }
   tag 'all_events' do |tag|
     events = Event.all
-    r = '<table width="100%" style="border: 2px solid rgb(255, 255, 255);">
+    # r = '<table width="100%" style="border: 2px solid rgb(255, 255, 255);">
+    r = '<table>
           <tbody>
             <tr>
               <td width="229" style="background-color: rgb(166, 210, 46); height: 44px;">
@@ -40,7 +41,7 @@ module Event::Tags
       '<div style="padding: 12px;" class="tdtxt">' << event.description << '</div></td>' <<
 
       '<td valign="top" align="center" style="background-color: rgb(246, 246, 247); height: 44px;">' <<
-      '<div style="padding-top: 10px;"><img height="17" width="62" style="border: medium none ; margin: 0px;" alt="Register" src="/images/gordcooke-events.png" /></div></td>' <<
+      (event.is_cooke_report ? '<div style="padding-top: 10px;"><img height="17" width="62" style="border: medium none ; margin: 0px;" alt="Register" src="/images/cooke-report.png" /></div></td>' : '') <<
       
       '<td valign="top" style="background-color: rgb(246, 246, 247); height: 44px;">' <<
       '<div style="padding: 12px;" class="tdtxt"><span style="background-color: rgb(246, 246, 247); height: 44px;">' << event.location << '</span></div></td>' <<

@@ -22,7 +22,7 @@ class MailController < ApplicationController
     end
     
     if mail.send
-      redirect_to (config[:redirect_to] || "#{@page.url}#mail_sent")
+      redirect_to (config[:redirect_to] || "#{@page.url}#mail_sent?name=#{params[:mailer][:name]}")
     else
       render :text => @page.render
     end
