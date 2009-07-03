@@ -1,17 +1,31 @@
 class Event < ActiveRecord::Base  
+  
+  validates_presence_of :start_date
+  validates_presence_of :start_time
+  validates_presence_of :description
+  validates_presence_of :location
+  
+  default_scope :order => 'start_date DESC'
+  
   def time
-    if start_time and end_time
-      "#{start_time} to #{end_time}"
-    else
+    s = (!start_time.blank? and !end_time.blank?) ?
+      "#{start_time} to #{end_time}" :      
       (start_time || end_time).to_s
-    end
+      
+    s.gsub!(/\s0/, ' ')
+    s.gsub!(/^0/, '')
   end
   
   def date
-    if start_date and end_date
-      "#{start_date} - #{end_date}"
+    s = start_date && start_date.strftime("%b, %d, %Y")
+    e = end_date && end_date.strftime("%b, %d, %Y")
+    
+    return s if s == e
+    
+    if s and e
+      "#{s} - <br /> #{e}"
     else
-      (start_date || end_date).to_s
+      (s || e).to_s
     end
   end
 end

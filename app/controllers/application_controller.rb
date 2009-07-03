@@ -46,8 +46,8 @@ class ApplicationController < ActionController::Base
   
     def set_javascripts_and_stylesheets
       @stylesheets ||= []
-      @stylesheets.concat %w(admin/main admin/custom)
+      @stylesheets.concat %w(admin/main admin/custom start/jquery-ui-1.7.2.custom)
       @javascripts ||= []
-      @javascripts.concat %w(jquery-1.3.2.min jquery.timePicker prototype string effects admin/tabcontrol admin/ruledtable admin/admin admin/custom)
+      @javascripts.concat %w(jquery-1.3.2.min jquery-ui-1.7.2.custom.min.js jquery.timePicker prototype string effects admin/tabcontrol admin/ruledtable admin/admin admin/custom)
     end
 end

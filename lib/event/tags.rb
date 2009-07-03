@@ -47,13 +47,13 @@ module Event::Tags
       '<div style="padding: 12px;" class="tdtxt"><span style="background-color: rgb(246, 246, 247); height: 44px;">' << event.location << '</span></div></td>' <<
       
       '<td valign="top" style="background-color: rgb(246, 246, 247); height: 44px;">' <<
-      '<div style="padding: 12px;" class="tdtxt">' << event.time << '</div></td>' <<
+      '<div style="padding: 12px;" class="tdtxt">' << event.time.to_s << '</div></td>' <<
       
       '<td valign="top" style="background-color: rgb(246, 246, 247); height: 44px;">' <<
-      '<div style="padding: 12px;" class="tdtxt">' << event.date << '</div></td>' <<
+      '<div style="padding: 12px;" class="tdtxt">' << event.date.to_s << '</div></td>' <<
       
       '<td valign="top" align="center" style="background-color: rgb(246, 246, 247); height: 44px;">' <<
-      '<div style="padding-top: 6px;"><a href="/meet-gord?event_id='+event.id.to_s+'&description='+event.description+'&location='+event.location+'&time='+event.time+'&date='+event.date+'"><img height="21" width="65" style="border: medium none ; margin: 0px;" alt="Register" src="/images/b_register-events.png" /></a></div></td>'
+      '<div style="padding-top: 6px;"><a href="/meet-gord?event_id='+event.id.to_s+'&description='+event.description+'&location='+event.location+'&time='+event.time.to_s+'&date='+event.date.to_s+'"><img height="21" width="65" style="border: medium none ; margin: 0px;" alt="Register" src="/images/b_register-events.png" /></a></div></td>'
     }.join('</tr><tr>')
     
     r << '</tr></tbody></table>'
@@ -65,9 +65,9 @@ module Event::Tags
     <pre><code><r:recent_events /></code></pre>    
   }
   tag 'recent_events' do |tag|
-    events = Event.find(:all, :order => 'id DESC', :limit => 2)
+    events = Event.find(:all, :conditions => "start_date >= CURDATE()", :order => 'start_date ASC', :limit => 2)
     events.map { |event| 
-      "<p>#{event.description}.<br/>" <<
+      "<p>#{event.description[0..36]}<br/>" <<
       '<span class="readmore"><a href="/events/events-calendar">Read more</a></span> <img height="7" width="9" alt="" src="/images/arrow-black.png"/></p>'
     }.join("\n")
   end  
