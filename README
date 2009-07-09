@@ -1,6 +1,6 @@
 ERRORS
 ------
- * When clicking on the FCK editor (Insert/edit link) then Browse File, it gives us and XML structure error.
+ * Find out why: When clicking on the FCK editor (Insert/edit link) then Browse File, it gives us and XML structure error. (only happen on the server)
 
 EVENTS MANAGER
 --------------
