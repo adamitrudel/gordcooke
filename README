@@ -1,9 +1,7 @@
-ERRORS
-------
- * Find out why: When clicking on the FCK editor (Insert/edit link) then Browse File, it gives us and XML structure error. (only happen on the server)
-
 EVENTS MANAGER
 --------------
+* Find out why: When clicking on the FCK editor (Insert/edit link) then Browse File, it gives us and XML structure error. (only happen on the server)
+
 When creating an event, we should have a checkbox that asks if it's a Cooke Report or not.  If not checked, remove logo in listing.
 
 Changing the date field for a "Calendar start Date and Calendar Finish Date" and same for Hours
