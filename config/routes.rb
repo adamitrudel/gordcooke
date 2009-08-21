@@ -1,5 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
 
+  map.namespace :remote do |remote|
+    remote.resources :events, :only => 'show'
+  end
+  
   # Admin RESTful Routes
   map.namespace :admin, :member => { :remove => :get } do |admin|
     admin.resources :pages do |pages|
@@ -41,5 +45,4 @@ ActionController::Routing::Routes.draw do |map|
     # Everything else
     site.connect           '*url',                               :action => 'show_page'
   end
-
 end

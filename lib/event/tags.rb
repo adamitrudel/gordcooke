@@ -53,7 +53,7 @@ module Event::Tags
       '<div style="padding: 12px;" class="tdtxt">' << event.date.to_s << '</div></td>' <<
       
       '<td valign="top" align="center" style="background-color: rgb(246, 246, 247); height: 44px;">' <<
-      '<div style="padding-top: 6px;"><a href="/meet-gord?event_id='+event.id.to_s+'&description='+event.description+'&location='+event.location+'&time='+event.time.to_s+'&date='+event.date.to_s+'"><img height="21" width="65" style="border: medium none ; margin: 0px;" alt="Register" src="/images/b_register-events.png" /></a></div></td>'
+      '<div style="padding-top: 6px;"><a href="/meet-gord?event_id='+event.id.to_s+'"><img height="21" width="65" style="border: medium none ; margin: 0px;" alt="Register" src="/images/b_register-events.png" /></a></div></td>'
     }.join('</tr><tr>')
     
     r << '</tr></tbody></table>'
