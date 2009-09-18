@@ -7,6 +7,13 @@ class Event < ActiveRecord::Base
   
   default_scope :order => 'start_date DESC'
   
+  def to_json
+    hash = attributes
+    hash['time'] = time
+    hash['date'] = date
+    hash.to_json
+  end
+  
   def time
     s = (!start_time.blank? and !end_time.blank?) ?
       "#{start_time} to #{end_time}" :      
